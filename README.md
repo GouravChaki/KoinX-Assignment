@@ -20,5 +20,33 @@ This is a Node.js application for parsing cryptocurrency trade data from CSV fil
 - `POST /trades/upload`: Upload and parse a CSV file
 - `POST /balance/getBalance`: Get asset balance at a given timestamp
 
-## Example CSV Format
+## File Structure
 
+KOINX-ASSIGNMENT/
+├── config/
+│   └── db.js                 # Database configuration
+├── controllers/
+│   ├── tradeController.js    # Controller for handling trade-related logic
+│   └── balanceController.js  # Controller for handling balance-related logic
+├── middlewares/
+│   └── errorHandler.js       # Middleware for handling errors
+├── models/
+│   └── trade.js              # Mongoose schema for Trade
+├── routes/
+│   └── index.js              # Main router
+│   └── tradeRoutes.js        # Routes for trade-related endpoints
+│   └── balanceRoutes.js      # Routes for balance-related endpoints
+├── services/
+│   └── tradeService.js       # Service for trade-related operations
+│   └── balanceService.js     # Service for balance calculation
+├── utils/
+│   └── csvParser.js          # Utility for parsing CSV files
+├── .env.sample               # Sample environment variables
+├── .gitignore                # Git ignore file
+├── package.json              # Package.json file
+├── README.md                 # Project README file
+└── server.js                 # Entry point of the application
+
+## Deployment
+1. Deployed MongoDB server on MongoAtlas
+2. Deployed Backend(Node) Server on Render
