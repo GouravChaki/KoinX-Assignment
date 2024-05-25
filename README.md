@@ -17,8 +17,8 @@ This is a Node.js application for parsing cryptocurrency trade data from CSV fil
 
 ## API Endpoints
 
-- `POST /api/trades/upload`: Upload and parse a CSV file
-- `POST /api/balance`: Get asset balance at a given timestamp
+- `POST /trades/upload`: Upload and parse a CSV file
+- `POST /balance/getBalance`: Get asset balance at a given timestamp
 
 ## Example CSV Format
 
