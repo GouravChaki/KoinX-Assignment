@@ -8,9 +8,9 @@ module.exports = async (timestamp) => {
     trades.forEach(trade => {
         const coin = trade.baseCoin;
         const amount = trade.amount;
-        if (trade.operation === 'BUY') {
+        if (trade.operation === 'Buy') {
             balances[coin] = (balances[coin] || 0) + amount;
-        } else if (trade.operation === 'SELL') {
+        } else if (trade.operation === 'Sell') {
             balances[coin] = (balances[coin] || 0) - amount;
         }
     });
